@@ -1,0 +1,27 @@
+body {
+    /*
+    background: #7f7fd5; 
+    background: -webkit-linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5); 
+    background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5); 
+    */
+    background-image: url(D:/Proyectos/RS/img/architecture-1868667_640.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+#descripcion {
+    resize: none;
+}
+
+.centrado {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.reset {
+    all: revert;
+}

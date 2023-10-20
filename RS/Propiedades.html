@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=}, initial-scale=1.0">
+    <title>Propiedades</title>
+        <!--Boostrap 5-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/interfaz.css" />
+    <!-- Iconos-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="boby">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">SAR <i class='bx bxs-home'></i> - Sistema Administrativo de Renta</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Inquilinos.html">Inquilinos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="Propiedades.html">Propiedades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Colaboradores</a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+        </nav>
+        <div class="container my-3">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 py-4 bg-white">
+                    <h3>INGRESO DEL INMUEBLE  <i class='bx bxs-home'></i></h3>
+                    <form>
+                        <fieldset class="reset">
+                            <legend class="reset">Datos del nuevo Inmbueble</legend>
+                            <div class="mb-3">
+                                <fieldset>
+                                    <legend>Tipo de inmueble</legend>
+                                    <div>
+                                        <input type="radio" id="apartamento" name="tipoInmueble" value="apartamento" checked />
+                                        <label for="apartamento">Apartamento</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="apartaestudio" name="tipoInmueble" value="cc" />
+                                        <label for="cc">Apartaestudio</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="pasaporte" name="tipoInmueble" value="pasaporte" />
+                                        <label for="pasaporte">Edificio</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="Nit" name="tipoInmueble" value="Nit" />
+                                        <label for="Nit">Casa</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="Nit" name="tipoInmueble" value="Nit" />
+                                        <label for="Nit">Parqueadero</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="Nit" name="tipoInmueble" value="Nit" />
+                                        <label for="Nit">Lote</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="Nit" name="tipoInmueble" value="Nit" />
+                                        <label for="Nit">Empresa</label>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="mb-3">
+                                <label for="direccion" class="form-label">Direccion</label>
+                                <input type="text" class="form-control" id="direccion" placeholder="Direccion" autofocus />
+                            </div>
+                            <div class="mb-3">
+                                <label for="barrio" class="form-label">Barrio</label>
+                                <input type="text" class="form-control" id="Barrio"
+                                    placeholder="lugarNacimiento" autofocus />
+                            </div>
+                            <div class="mb-3">
+                                <label for="estrato" class="form-label">Estrato</label>
+                                <input type="text" class="form-control" id="estrato" placeholder="Estrato" autofocus />
+                            </div>
+                            <div class="mb-3">
+                                <label for="descripcion" class="form-label">Descripción del inmueble</label>
+                                    <textarea class="form-control" id="descripcion" placeholder="Descripción del inmueble" rows="3"></textarea>
+                            </div>
+                            <!-- <span id="startDateSelected"></span> 
+                            <div class="mb-3">
+                                <label for="fechaNacimiento">Fecha de nacimiento</label>
+                                <input id="fechaNacimiento" class="form-control" type="date" />
+
+                            </div>
+                            -->
+                            <div class="mb-3">
+                                <label for="valorRenta" class="form-label">Valor de la renta</label>
+                                <input type="number" class="form-control" id="renta" placeholder="valor de la renta" autofocus />
+                            </div>
+                            <div class="mb-3">
+                                <fieldset>
+                                    <legend>Parqueadero</legend>
+                                    <div>
+                                        <input type="radio" id="siParqueadero" name="actividadEconomica" value="cc"
+                                            checked />
+                                        <label for="empleado">Si</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="independiente" name="actividadEconomica"
+                                            value="independiente" />
+                                        <label for="independiente">No</label>
+                                    </div>
+                                </fieldset>
+                            </div>
+
+                        </fieldset>
+                        <div class="mb-3">
+                            <fieldset class="reset">
+                                <legend class="reset">Datos del inmueble</legend>
+                                <div class="mb-3">
+                                    <label for="cantidadHabitaciones" class="form-label">Cantidad habitaciones</label>
+                                    <input type="number" class="form-control" id="habitaciones" placeholder="Cantidad de habitaciones"
+                                        autofocus />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="cantidadBanos" class="form-label">Cantidad de baños</label>
+                                    <input type="text" class="form-control" id="cantiadBanos" placeholder="Cantidad de baños"
+                                        autofocus />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="valorRenta" class="form-label">Valor de la renta</label>
+                                    <input type="text" class="form-control" id="valorRenta" placeholder="Valor de la renta"
+                                        autofocus />
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-success">Guardar</button>
+                            <button class="btn btn-secondary">Limpiar</button>
+                        </div>
+                    </form>
+                </div>
+</body>
+<!--JS Complement Boostrap-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</html>
